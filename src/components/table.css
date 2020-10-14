@@ -19,7 +19,8 @@ table tr:hover {
   background-color: #ddd;
 }
 
-table th {
+table th,
+table tfoot td {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #4caf50;
