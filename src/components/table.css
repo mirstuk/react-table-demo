@@ -26,3 +26,18 @@ table tfoot td {
   background-color: #4caf50;
   color: white;
 }
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  display: inline-block;
+  width: 50ch;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
