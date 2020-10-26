@@ -60,3 +60,19 @@ table tfoot td {
 .search-column input::placeholder {
   color: #aaa;
 }
+
+.pagination {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination input {
+  text-align: center;
+  width: 3ch;
+}
+.pagination input::-webkit-outer-spin-button,
+.pagination input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -18,6 +18,8 @@ const PaginationTable = () => {
     canNextPage,
     nextPage,
     pageOptions,
+    gotoPage,
+    pageCount,
     state,
     prepareRow,
   } = useTable(
@@ -57,15 +59,31 @@ const PaginationTable = () => {
           })}
         </tbody>
       </table>
-      <div>
-        <span>
-          Page {pageIndex + 1} of {pageOptions.length}
-        </span>
+      <div className="pagination">
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {'<<'}
+        </button>
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           Prev
         </button>
+        <div>
+          Page {pageIndex + 1} of {pageOptions.length}
+        </div>
+
+        <div>&nbsp;| Go to page: </div>
+        <input
+          type="number"
+          defaultValue={pageIndex + 1}
+          onChange={e => {
+            const pageNumber = e.target.value ? Number(e.target.value) - 1 : 0;
+            gotoPage(pageNumber);
+          }}
+        />
         <button onClick={() => nextPage()} disabled={!canNextPage}>
           Next
+        </button>
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {'>>'}
         </button>
       </div>
     </>
