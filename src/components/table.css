@@ -63,9 +63,7 @@ table tfoot td {
 
 .pagination {
   margin: 1rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .pagination input {
   text-align: center;
