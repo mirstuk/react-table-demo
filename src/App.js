@@ -1,10 +1,10 @@
 import React from 'react';
-import FilteringTable from './components/FilteringTable';
+import PaginationTable from './components/PaginationTable';
 
 function App() {
   return (
     <div>
-      <FilteringTable />
+      <PaginationTable />
     </div>
   );
 }
