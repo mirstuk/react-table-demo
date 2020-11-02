@@ -74,3 +74,16 @@ table tfoot td {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.button {
+  all: unset;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #ffe606;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}

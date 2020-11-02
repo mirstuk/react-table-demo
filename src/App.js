@@ -1,10 +1,10 @@
 import React from 'react';
-import PaginationTable from './components/PaginationTable';
+import ColumnOrder from './components/ColumnOrder';
 
 function App() {
   return (
     <div>
-      <PaginationTable />
+      <ColumnOrder />
     </div>
   );
 }
