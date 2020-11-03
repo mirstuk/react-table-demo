@@ -1,10 +1,10 @@
 import React from 'react';
-import ColumnOrder from './components/ColumnOrder';
+import RowSelection from './components/RowSelection';
 
 function App() {
   return (
     <div>
-      <ColumnOrder />
+      <RowSelection />
     </div>
   );
 }
