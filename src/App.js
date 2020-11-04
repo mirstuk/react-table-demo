@@ -1,10 +1,10 @@
 import React from 'react';
-import RowSelection from './components/RowSelection';
+import ColumnHiding from './components/ColumnHiding';
 
 function App() {
   return (
     <div>
-      <RowSelection />
+      <ColumnHiding />
     </div>
   );
 }

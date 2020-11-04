@@ -87,3 +87,9 @@ table tfoot td {
   font-weight: bold;
   cursor: pointer;
 }
+
+.hide-columns {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
